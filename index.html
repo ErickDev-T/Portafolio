@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body>
+    <html lang="en">
+    <!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+        <link rel="stylesheet" href="style.css">
+        <title>LP Desarrollador Web</title>
+    </head>
+    <body>
+        <section id="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="contenido-header">
+                        <nav id="nav" class="">
+                            <ul id="links">
+                                <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                                <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                                <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                                <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                                <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                            </ul>
+                        </nav>
     
-</body>
+                        <!-- Icono del menu responsive -->
+                        <div id="icono-nav" onclick="responsiveMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+    
+    
+                        <div class="redes">
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                        </div>
+                    </div>
+                </header>
+                <div class="presentacion">
+                    <p class="bienvenida">Bienvenidos</p>
+                    <h2>Soy <span>Erick Tejada</span>, estudiante de Desarrollador de software</h2>
+                    <p class="descripcion">Con enfoque en front-End</p>
+                    <a class="ir-a-portafolio" href="#portfolio">Ir a Portafolio</a>
+                </div>
+            </div>
+        </section>
+
+        
+    </body>
 </html>
