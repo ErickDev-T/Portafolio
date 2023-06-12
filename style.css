@@ -14,7 +14,7 @@ html {
 #inicio {
     background: rgb(157,178,191);
     background: linear-gradient(90deg, rgba(157,178,191,1) 16%, rgba(82,109,130,1) 52%, rgba(39,55,77,1) 100%);    background-position: center center;
-    height: 90vh;
+    height: 100vh;
     /*min-width: 60vh;*/
 }
 
@@ -111,7 +111,6 @@ h2 {
 }
 
 span {
-    font-size: 30px;
     font-family: 'Rubik', sans-serif;
     color: #27374D; 
 }
@@ -132,11 +131,35 @@ span {
     background-color: #929fb3;
 }
 
+
+.sobreMi-a {
+    color:#fff;
+    position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; 
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+.sobreMi {
+    display: flex;
+}
+
+.fotopersonal {
+    height: 50vh;
+    width: 35vh;
+   /* border: solid 2px #17181C;
+    position: relative;
+    left: 50vh;
+    top: 10vh;*/
+    margin: 20px;
+    align-items: center;
+}   
+
+
 @media only screen and (max-width: 740px) {
-    html {
-      max-width: 420px;
-      background-color: #17181C;
-    }
 
     #inicio .contenido header .contenido-header {
         height: 150px;
