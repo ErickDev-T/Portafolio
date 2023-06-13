@@ -36,9 +36,9 @@ html {
     padding: 0px 20px;
     width: auto;
     justify-content: space-around;
-    position: sticky;
-
-
+    position: fixed;
+    right: 0px;
+    left: 0px;
 }
 
 
@@ -163,10 +163,10 @@ span {
 .fotopersonal {
     height: 50vh;
     width: 35vh;
-   /* border: solid 2px #17181C;
+    border: solid 2px #17181C;
     position: relative;
     left: 50vh;
-    top: 10vh;*/
+    top: 10vh;
     margin: 20px;
     align-items: center;
 }   
