@@ -12,40 +12,51 @@ html {
 }
 
 #inicio {
-    background: rgb(157,178,191);
-    background: linear-gradient(90deg, rgba(157,178,191,1) 16%, rgba(82,109,130,1) 52%, rgba(39,55,77,1) 100%);    background-position: center center;
+    background-image: url(./assets/fondo-pc.jpg);
+    background-color: rgba(0, 0, 0, 0.60);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center center;
     height: 100vh;
-    /*min-width: 60vh;*/
+    
 }
 
 .contenido-header, .redes, nav{
     height: 40px;
-    background-color:#17181C;
+    background-color:rgba(0, 0, 0, 0.400);
     text-align: center;
-  }
 
-  #inicio .contenido header .contenido-header {
+}
+
+  #inicio .contenido-header {
+
     margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 20px;
+    width: auto;
+    justify-content: space-around;
+    position: sticky;
+
+
 }
+
 
   .redes, nav ul{
      list-style: none;
      display: inline-block;
-     padding: 8px;
+     padding: 7px 8px;
      font-family: 'Rubik', sans-serif;
 
-  }
+}
 
  .redes, nav ul li{
       float: left;
       margin-top: 0px;
       
-  }
+    }
 .redes, nav ul li a {
+
       color: white;
       font-weight: bold;
       text-decoration: none;
@@ -54,8 +65,7 @@ html {
       padding-right: 15px;
       padding-left: 15px;
       font-family: 'Rubik', sans-serif;
-    
-  }
+    }
 
   nav ul li a:hover{
     background-color: #929fb3;
@@ -112,7 +122,10 @@ h2 {
 
 span {
     font-family: 'Rubik', sans-serif;
-    color: #27374D; 
+    color: #fff;
+    text-decoration-line: underline;
+    text-decoration-color: #fff;
+    
 }
 
 .ir-a-portafolio {
@@ -135,11 +148,11 @@ span {
 .sobreMi-a {
     color:#fff;
     position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center; 
-  font-family: 'Rubik', sans-serif;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; 
+    font-family: 'Rubik', sans-serif;
   
 }
 
@@ -158,11 +171,13 @@ span {
     align-items: center;
 }   
 
-
+/*
 @media only screen and (max-width: 740px) {
 
     #inicio .contenido header .contenido-header {
-        height: 150px;
+        height: 75px;
     }
   }
+
+  */
 
