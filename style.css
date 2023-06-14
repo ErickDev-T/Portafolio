@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
 
+/***********************
+           NAV
+***********************/
+body {
+    background-color: rgba(0, 0, 0, 0.090);
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat';
 }
 
@@ -43,34 +49,38 @@ html {
 
 
   .redes, nav ul{
-     list-style: none;
-     display: inline-block;
-     padding: 7px 8px;
-     font-family: 'Rubik', sans-serif;
+    list-style: none;
+    display: inline-block;
+    padding: 7px 8px;
+    font-family: 'Rubik', sans-serif;
 
 }
 
  .redes, nav ul li{
-      float: left;
-      margin-top: 0px;
+    float: left;
+    margin-top: 0px;
       
     }
 .redes, nav ul li a {
 
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 20px;
-      padding: 8px;
-      padding-right: 15px;
-      padding-left: 15px;
-      font-family: 'Rubik', sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'Rubik', sans-serif;
     }
 
   nav ul li a:hover{
     background-color: #929fb3;
     transition: 1s;
   }
+
+/***********************
+        Sobre mi
+***********************/
 
   .descripcion, .bienvenida, h2 {
     padding-bottom: 20px;
@@ -145,7 +155,7 @@ span {
 }
 
 
-.sobreMi-a {
+.sobreMi-frase {
     color:#fff;
     position: absolute;
     bottom: 0;
@@ -156,20 +166,57 @@ span {
   
 }
 
-.sobreMi {
+/***********************
+    Sobre mi con foto
+***********************/
+
+.sobreMidiv {
+    justify-content: center;
     display: flex;
+    margin-top: 90px;
+    font-family: 'Rubik', sans-serif;
+
 }
 
 .fotopersonal {
-    height: 50vh;
-    width: 35vh;
-    border: solid 2px #17181C;
-    position: relative;
-    left: 50vh;
+    border: solid 20px rgba(0, 0, 0, 0.100);
+    border-radius: 20px;
     top: 10vh;
     margin: 20px;
-    align-items: center;
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 90px;
 }   
+
+
+.hablandoSobreMi {
+    display: flex;
+    align-items: center;
+    width: 460px ;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.titulosm {
+    font-family: 'Rubik', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #526D82;
+    line-height: 30px;
+}
+
+.descargarPortafolio {
+    text-decoration: none;
+    margin-top: 100px;
+    border: 2px solid #27374D;
+    color: #27374D;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 8px;
+}
 
 /*
 @media only screen and (max-width: 740px) {
