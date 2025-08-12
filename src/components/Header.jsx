@@ -21,7 +21,7 @@ function Header(){
     <div className="container mx-auto px-6 py-4">
       <div className="flex items-center justify-between">
         <div className="text-2xl font-bold">
-          <span className="text-green-400">Erick</span>
+          <span className="text-green-400">Eric</span>
           <span className="text-white">TEJADA</span>
           <span className="text-green-400">.</span>
         </div>
