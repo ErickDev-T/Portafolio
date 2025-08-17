@@ -16,12 +16,20 @@ function Header(){
 
   }, []);
 
+  const scrollToSection = (href) =>{
+    const element = document.querySelector(href);
+    if(element){
+      element.scrollIntoView({behavior: "shooth"})
+    }
+    setIsOpen(false)
+  }
+
 
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500`}>
     <div className="container mx-auto px-6 py-4">
       <div className="flex items-center justify-between">
         <div className="text-2xl font-bold">
-          <span className="text-green-400">Eric</span>
+          <span className="text-green-400">Erick</span>
           <span className="text-white">TEJADA</span>
           <span className="text-green-400">.</span>
         </div>
