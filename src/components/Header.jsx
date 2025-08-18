@@ -67,14 +67,28 @@ function Header(){
           {isMenuOpen ? <X size={24} /> : <Menu size={24}/> }
         </button>
       </div>
-      {/* mobile nav*/}
-      <nav className="md:hidden mt-4 pb-4 border-t border-slate-800 pt-4 bg-slate-800 rounded-lg shadow-lg">
+      
+      {isMenuOpen && ( 
+        <nav className="md:hidden mt-4 pb-4 border-t border-slate-800 pt-4 bg-slate-800 rounded-lg shadow-lg">
+          {/* mobile nav*/}
+          {navItems.map((item) => {
+          return (
+            <button 
+              className="block w-full text-left py-3 px-4 text-gray-300 hover:text-green-400 hover:bg-slate-700 transition-all duration-300 rounded-lg">
+              {item.name}
+            </button>
+          )
+        }
+      )
+    }
 
         <button className="mt-4 w-full flex items-center justify-center gap-2 bg-green-600
           text-white px-6 py-2.5 rounded-lg hover:bg-green-700 transition-all duration-300">
           Download my CV Now
         </button>
       </nav>
+    )
+  }
     </div>
   </header>
 }
