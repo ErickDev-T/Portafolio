@@ -82,7 +82,7 @@ function Header() {
 
           <button className="mt-4 w-full flex items-center justify-center gap-2 bg-green-600
           text-white px-6 py-2.5 rounded-lg hover:bg-green-700 transition-all duration-300">
-            Download my CV Nowaa
+            Download my CV Nowaaasdasdas
           </button>
         </nav>
       )
