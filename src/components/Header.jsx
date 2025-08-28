@@ -46,7 +46,7 @@ function Header() {
         <div className="text-2xl font-bold">
           <span className="text-green-400">Erick</span>
           <span className="text-white">TEJADA</span>
-          <span className="text-green-400">.</span>
+          <span className="text-green-400">...</span>
         </div>
         <nav className="hidden md:flex space-x-8">
           {navItems.map((item, index) => {
