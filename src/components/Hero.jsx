@@ -48,7 +48,7 @@ function Hero() {
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </button>
                 <button className="border-2 border-slate-600 text-white px-8 py-4 rounded-lg hover:border-green-600 hover:text-green-400 transition-all duration-300 font-medium flex items-center gap-2 group hover:scale-105">
-                  <Play className="w-5 h-5" /> Play Video
+                  <Play className="w-5 h-5" /> Play Videoo
                 </button>
               </div>
               {/*iconos redes sociales*/}
