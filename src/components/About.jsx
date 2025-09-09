@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import photo from "../assets/photo.jpeg";
 
 function About() {
+
+  const [isVisible, SetIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.intersectionRatio) {
+          SetIsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    const element = document.getElementById("about");
+    if (element) observer.observe(element);
+    return () => observer.disconnect();
+  }, [])
+
+
+
+
+
+
   return (
     <section id="about" className="py-24 bg-slate-950 relative overflow-hidden">
       {/* Fondos animados */}
@@ -21,7 +43,7 @@ function About() {
         <div className="container px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-space">
             {/*image left*/}
-            <div className={`relative transition-all duration-1000`}>
+            <div className={`relative transition-all duration-1000 ${isVisible ? "opacity-100 translatex-0" : "opacity-0 -translate-x-10"}`}>
               <div className="relative group">
                 <div className="w-full max-w-md mx-auto">
                   <div className="relative border-4 border-green-500 rounded-2xl p-2 group-hover:border-green-400 transition-all duration-300">
@@ -39,7 +61,7 @@ function About() {
             </div>
 
             {/* Right Content */}
-            <div className="space-y-8 transition-all duration-1000 delay-300">
+            <div className={`space-y-8 transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translatex-0" : "opacity-0 -translate-x-10"}`}>
               <div className="space-y-4">
                 <p className="text-green-400 font-semibold text-lg">About Us</p>
                 <h2 className="text-4xl md:text-5xl text-white font-bold animate-slide-up">
@@ -79,20 +101,22 @@ function About() {
 
                 <div className="group">
                   <p className="text-white font-semibold group-hover:text-green-400 transsition-all duration-300"> Birthday: </p>
-                  <p className="text-gray-300">07 september, 2005</p>
+                  <p className="text-gray-300">07 september, 2004</p>
 
                 </div>
 
                 <div className="group">
                   <p className="text-white font-semibold group-hover:text-green-400 transsition-all duration-300"> Email: </p>
                   <p className="text-gray-300">erickjtmdev@gmail.com</p>
-
                 </div>
               </div>
+              <div className="flex flex-wrap gap-4 transition-all duration-1000 delay-1100">
+                <button className="bg-green-700 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-all duration-300 font-medium shadow-lg hover:shadow-xl hover:scale-105">Download</button>
+
+                <button className="border-2 border-slate-600 text-white px-8 py-3 rounded-xl hover:border-green-600 hover:text-400 transition-all duration-300 font-medium hover:scale-105">Learn More</button>
+              </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </section>

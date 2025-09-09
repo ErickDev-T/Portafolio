@@ -50,7 +50,9 @@ function Header() {
         </div>
         <nav className="hidden md:flex space-x-8">
           {navItems.map((item, index) => {
-            return <button className="text-gray-300 hover:text-green-400 transition-all duration-300 font-medium relative group" style={{ animationDelay: `${index * 0.1}s` }}>
+            return <button 
+            onClick={() => scrollToSection(item.href)}
+            className="text-gray-300 hover:text-green-400 transition-all duration-300 font-medium relative group" style={{ animationDelay: `${index * 0.1}s` }}>
 
               {item.name}
               <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-green-400 transition-all duration-300 group-hover:w-full"></span>
