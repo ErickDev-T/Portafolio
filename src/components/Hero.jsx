@@ -31,13 +31,13 @@ function Hero() {
             {/* left content */}
               <div className="space-y-4">
                 <p className={`text-green-400 font-semibold text-lg transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-                  Get Ready to start work
+                  Get Ready to start work <span className="text-white"> (still working on it) </span> 
                 </p>
-                <h1 className={`text-8xl md:text-7xl font-black text-white leading-tight transition-all duration-2000 delay-200  ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>I'm    {/* transicin suave cambio de size */}
+                <h1 className={`text-5xl md:text-7xl font-black text-white leading-tight transition-all duration-2000 delay-200  ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>I'm {/* transicin suave cambio de size */}
                   <span className="text-green-400"> Developer </span>
                   <span className="text-white">Erick Tejada</span>
                 </h1>
-                <p className={`text-gray-300 text-4xl leading-relaxed transition-all duration-2000 delay-400  ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+                <p className={`text-gray-300 text-2xl leading-relaxed transition-all duration-2000 delay-400  ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                   Hi! I'm Erick, a tech enthusiast who loves learning, building projects, and solving problems through technology. Always curious and excited to keep growing.</p>
                 <div className={`flex flex-wrap gap-4 transition-all duration-1000 delay-600  ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                   <button className="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 transition-all duration-3000 flex items-center gap-2 group shadow-lg hover:shadow-xl font-medium hover:scale-105">

@@ -12,21 +12,16 @@ function About() {
           SetIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.9 }
     );
     const element = document.getElementById("about");
     if (element) observer.observe(element);
     return () => observer.disconnect();
   }, [])
 
-
-
-
-
-
   return (
-    <section id="about" className="py-24 bg-slate-950 relative overflow-hidden">
-      {/* Fondos animados */}
+    <section id="about" className="py-24 bg-slate-950 relative overflow-hidden min-h-screen">
+      {/* fondos animados */}
       <div className="absolute inset-0">
         {/* bola verde flotando lento */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-green-500/10 rounded-full blur-xl animate-bounce"></div>
@@ -39,7 +34,7 @@ function About() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-500/10 to-transparent"></div>
       </div>
 
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-4 min-h-100vh">
         <div className="container px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-space">
             {/*image left*/}
@@ -62,8 +57,8 @@ function About() {
 
             {/* Right Content */}
             <div className={`space-y-8 transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translatex-0" : "opacity-0 -translate-x-10"}`}>
-              <div className="space-y-4">
-                <p className="text-green-400 font-semibold text-lg">About Us</p>
+              <div className="space-y-3">
+                <p className="text-green-400 font-semibold text-lg">About Me</p>
                 <h2 className="text-4xl md:text-5xl text-white font-bold animate-slide-up">
                   Why hire me for your <br />
                   <span>next project?</span>
@@ -73,7 +68,7 @@ function About() {
                 </p>
               </div>
 
-              <div className="space-y-6 text-gray-300 leading-relaxed">
+              <div className="space-y-6 text-gray-300 leading-relaxed mb-2">
                 <p className="text-lg transition-all duration-100 delay-500">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deserunt
                   doloremque totam architecto alias nihil sapiente blanditiis non vero
@@ -88,7 +83,7 @@ function About() {
                   aliquid possimus, eos consequatur voluptate delei.
                 </p>
               </div>
-              <div className={`grid grid-cols-2 gap-8 py-6 transition-all duration-1000 delay-500`}>
+              <div className={`grid grid-cols-2 gap-6 py-6 transition-all duration-1000 delay-500`}>
                 <div className="group">
                   <p className="text-white font-semibold group-hover:text-green-400 transition-all duration-300">Name</p>
                   <p className="text-gray-300">Erick Tejada</p>
