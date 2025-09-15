@@ -58,7 +58,7 @@ function About() {
             {/* Right Content */}
             <div className={`space-y-8 transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translatex-0" : "opacity-0 -translate-x-10"}`}>
               <div className="space-y-3">
-                <p className="text-green-400 font-semibold text-lg">About Me</p>
+                <p className="text-green-400 font-semibold text-lg">About M</p>
                 <h2 className="text-4xl md:text-5xl text-white font-bold animate-slide-up">
                   Why hire me for your <br />
                   <span>next project?</span>
