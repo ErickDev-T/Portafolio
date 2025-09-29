@@ -29,7 +29,7 @@ function Skills() {
 
             <div className="mb-12">
               <p className="text-green-400 font-semibold text-lg mv-4">Expert</p>
-              <p className="text-4xl font-black text-white mb-8">My sjills</p>
+              <p className="text-4xl font-black text-white mb-8">My skills</p>
             </div>
           </div>
 
